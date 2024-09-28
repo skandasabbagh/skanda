@@ -9,13 +9,13 @@ export const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
               <a className="nav-link" href="/">
-                Home
+                HOME
               </a>
               <a className="nav-link" href="/about">
-                About
+                | ABOUT |
               </a>
               <a className="nav-link" title="About Park" href="/bespoke">
-                Bespoke
+                BESPOKE
               </a>
             </div>
           </div>

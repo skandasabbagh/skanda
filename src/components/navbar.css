@@ -19,6 +19,7 @@
     text-decoration: none;
     font-size: 20px;
     font-family: "Noto Sans JP", sans-serif;
+    font-weight: 700;
   }
   
   /* Change the color of links on hover */
@@ -43,4 +44,5 @@
   /* Ensure inline display */
   li {
     display: inline;
+    border-left: solid 1px  #80EFFE;
   }
