@@ -1,0 +1,30 @@
+.index-hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/studio-hero.jpeg");
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* width: 100vw;
+          height: 100vh; */
+  }
+  .index-hero-title-container {
+    /* background-color: #044a42; */
+    padding: 10px;
+    border-radius: 30px;
+  }
+  .index-hero-title {
+    color: white;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: bold;
+  }
+  .index-hero-content {
+    position: relative;
+  
+    text-align: center;
+  }

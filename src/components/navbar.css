@@ -1,0 +1,46 @@
+.topnav {
+    width: 100%; /* Full width */
+    padding: 10px; /* Adjust padding to suit the layout */
+    position: absolute; /* Position it at the top-left */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    z-index: 1000; /* Ensure it's above other elements */
+    display: flex; /* Use flexbox for proper alignment */
+    align-items: flex-start; /* Align items to the start of the container */
+  }
+  
+  /* Navigation link styling */
+  .topnav a {
+    display: inline-block; /* Align links horizontally */
+    float: left; /* Ensure links float to the left */
+    color: #80EFFE;
+    text-align: left; /* Align text inside each link to the left */
+    padding: 10px 15px; /* Padding around links */
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    color: black;
+    border-radius: 15px;
+  }
+  
+  /* Style for active/current link */
+  .topnav a.active {
+    text-decoration: underline;
+    color: grey;
+    border-radius: 15px;
+  }
+  
+  /* Remove list styling */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Ensure inline display */
+  li {
+    display: inline;
+  }
