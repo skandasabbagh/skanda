@@ -13,12 +13,13 @@
   .topnav a {
     display: inline-block; /* Align links horizontally */
     float: left; /* Ensure links float to the left */
-    color: #80EFFE;
+    color: #FFFF;
     text-align: left; /* Align text inside each link to the left */
     padding: 10px 15px; /* Padding around links */
     text-decoration: none;
     font-size: 20px;
-    font-family: "Noto Sans JP", sans-serif;
+    /* font-family: "Noto Sans JP", sans-serif; */
+    font-family: "Special Elite", system-ui;
     font-weight: 700;
   }
   

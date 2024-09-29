@@ -1,7 +1,7 @@
 .index-hero {
     display: flex;
     flex-direction: column;
-    background-image: url("../images/studio-hero.jpeg");
+    background-image: url("../images/temprorary-hero.png");
     height: 100vh;
     align-self: center;
     background-repeat: no-repeat;
@@ -20,11 +20,117 @@
   }
   .index-hero-title {
     color: white;
-    font-family: "Noto Sans JP", sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
     font-weight: bold;
+    font-size: 88px;
+    opacity: 60%;
   }
   .index-hero-content {
     position: relative;
   
     text-align: center;
+  }
+  .index-hero-title-top, .index-hero-title-bottom {
+    font-family: "Special Elite", system-ui;
+    color: white;
+    opacity: 70%;
+  }
+
+  .index-hero-title-top{
+    margin-bottom: -50px;
+  }
+  .index-hero-title-bottom{
+    margin-top: -50px;
+  }
+  .projects-container{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/projects-background.png");
+    height: 100vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative; /* Ensure container allows for precise positioning */
+    padding: 0; /* Remove default padding */
+    margin: 0; 
+   
+  }
+  .projects-title-continer {
+    position: absolute; 
+    top: 30px; 
+    left: 50px; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  .projects-container-title {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 88px;
+    opacity: 60%;
+    padding: 0; 
+    margin: 0;
+  }
+
+  .projects-subtitle-container {
+    position: absolute; /* Position it relative to .projects-container */
+    top: 120px; /* Position it lower than the main title */
+    left: 50%; /* Move it to the horizontal center of the container */
+    transform: translateX(20px); /* Shift it slightly off-center to the right */
+  }
+  
+  /* Subtitle text styling */
+  .projects-subtitle {
+    color: #FFFF;
+    font-family: "Special Elite", system-ui;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align: left; /* Optional: Align text to the left */
+    opacity: 80%;
+  }
+  .working-with-us-container{
+    height: 100VH;
+  }
+  .get-in-touch-container{
+    display: flex-start;
+    flex-direction: column;
+    background-image: url("../images/index-get-in-touch.png");
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    position: relative; /* Ensure container allows for precise positioning */
+    padding-left: 50px; /* Remove default padding */
+    margin: 0; 
+   
+  }
+  .get-in-touch-title-continer {
+    text-align: left;
+    position: relative; 
+    width: 250px;
+    top: 30px; 
+    padding: 0; 
+    margin: 0; 
+    
+  }
+
+  .get-in-touch-title {
+    text-align: left;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    opacity: 80%;
+    padding: 0; 
+    margin: 0;
   }
