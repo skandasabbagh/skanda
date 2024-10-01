@@ -1,17 +1,32 @@
-.index-hero {
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  * {
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+  .index-hero {
     display: flex;
     flex-direction: column;
-    background-image: url("../images/temprorary-hero.png");
+    position: relative; /* Ensures proper layering */
     height: 100vh;
-    align-self: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* width: 100vw;
-          height: 100vh; */
+    overflow: hidden; /* Ensures the video stays within bounds */
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the background */
+    z-index: -1; /* Send the video behind other content */
+    opacity: 0.7; /* Optional: Set opacity for visual effect */
   }
   .index-hero-title-container {
     /* background-color: #044a42; */
@@ -43,67 +58,181 @@
   .index-hero-title-bottom{
     margin-top: -50px;
   }
-  .projects-container{
+  .projects-container {
     display: flex;
     flex-direction: column;
     background-image: url("../images/projects-background.png");
-    height: 100vh;
-    align-self: center;
-    background-repeat: no-repeat;
+    /* Set padding instead of fixed height */
+    padding: 20px; /* Add some padding to the section */
+    background-repeat: repeat;
     background-size: cover;
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
     width: 100%;
     position: relative; /* Ensure container allows for precise positioning */
-    padding: 0; /* Remove default padding */
     margin: 0; 
-   
   }
   .projects-title-continer {
-    position: absolute; 
-    top: 30px; 
-    left: 50px; 
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out items */
     padding: 0; 
-    margin: 0; 
-  }
-  
-  .projects-container-title {
+    margin-bottom: 10px; /* Space below the title */
+}
+
+.projects-container-title {
     color: white;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 800;
     font-size: 88px;
     opacity: 60%;
-    padding: 0; 
-    margin: 0;
-  }
+    margin: 0; /* Remove margin for cleaner alignment */
+}
 
-  .projects-subtitle-container {
-    position: absolute; /* Position it relative to .projects-container */
-    top: 120px; /* Position it lower than the main title */
-    left: 50%; /* Move it to the horizontal center of the container */
-    transform: translateX(20px); /* Shift it slightly off-center to the right */
-  }
-  
-  /* Subtitle text styling */
-  .projects-subtitle {
+.projects-subtitle-container {
+    text-align: right; /* Center the subtitle */
+    margin-bottom: 20px; /* Space below the subtitle */
+}
+
+.projects-subtitle {
     color: #FFFF;
     font-family: "Special Elite", system-ui;
     font-weight: 400;
     font-size: 24px;
-    margin: 0;
-    padding: 10px;
-    text-align: left; /* Optional: Align text to the left */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Padding around the subtitle */
     opacity: 80%;
-  }
-  .working-with-us-container{
-    height: 100VH;
-  }
+}
+
+  .media-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the items */
+    padding: 0 10px; /* Optional: Add some padding */
+    width: 100%; /* Ensure full width */
+    margin: 0 auto; /* Center the container */
+}
+
+.media-item {
+    display: flex;
+    flex-direction: column; /* Stack image and video */
+    align-items: center; /* Center items within each media item */
+    margin: 10px; /* Space between items */
+    max-width: calc(25% - 20px); /* Four items per row with margin */
+    width: calc(25% - 20px); /* Add width here to ensure it respects the container size */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .media-item {
+        max-width: calc(33.33% - 20px); /* Three items per row on medium screens */
+        width: calc(33.33% - 20px); /* Ensure it respects container size */
+    }
+}
+
+@media (max-width: 768px) {
+    .media-item {
+        max-width: calc(50% - 20px); /* Two items per row on small screens */
+        width: calc(50% - 20px); /* Ensure it respects container size */
+    }
+}
+
+@media (max-width: 600px) {
+    .media-item {
+        max-width: calc(100% - 20px); /* Stack items vertically on extra small screens */
+        width: calc(100% - 20px); /* Full width on extra small screens */
+    }
+}
+
+.working-with-us-container {
+    display: flex;
+    background-color: #FAFBFB;
+    flex-direction: column; /* Default to column for mobile */
+    align-items: center; /* Center items in the column */
+    width: 100%;
+    position: relative;
+    padding: 20px; /* Add padding for space */
+}
+
+.working-with-us-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 48px;
+    margin: 0; 
+    text-align: center; /* Center title */
+}
+
+.working-with-us-content {
+    display: flex; /* Enable flexbox layout */
+    justify-content: space-between; /* Space columns evenly */
+    align-items: flex-start; /* Align items to the top */
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Max width for large screens */
+}
+
+.working-with-us-paragraphs-container {
+    flex: 2; /* Allow this column to take more space */
+    text-align: left; /* Left-align text */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.working-with-us-paragraph {
+    margin: 10px 0; /* Space between paragraphs */
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+.working-with-us-picture-container {
+    flex: 1; /* Allow this column to take available space */
+    display: flex; /* Enable flexbox for the image container */
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    height: auto; /* Adjust height automatically */
+}
+
+.working-with-us-image {
+    width: 100%; /* Set the image to take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Optional: Limit max width to prevent it from getting too large */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .working-with-us-container {
+        padding: 10px; /* Reduce padding on mobile */
+    }
+
+    .working-with-us-content {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .working-with-us-paragraphs-container {
+        flex: 1; /* Allow full width for paragraphs */
+    }
+
+    .working-with-us-picture-container {
+        justify-content: center; /* Center image horizontally */
+        width: 100%; /* Full width for images */
+    }
+
+    .working-with-us-image {
+        width: 100%; /* Ensure the image takes full width on smaller screens */
+        max-width: none; /* Remove max-width constraint */
+    }
+}
+
+.logos-container{
+    margin: 0;
+    margin-top: -20px;
+    display: inline-flex;
+    justify-content: space-between;
+}
   .get-in-touch-container{
     display: flex-start;
     flex-direction: column;
     background-image: url("../images/index-get-in-touch.png");
-    height: 80vh;
+    height: 60vh;
     align-self: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -134,3 +263,124 @@
     padding: 0; 
     margin: 0;
   }
+
+  .home-contact-button {
+    display: inline-block; /* Ensure it's treated as a block element */
+    padding: 10px 20px; /* Add padding for the button */
+    background-color: #FAFBFB; /* Button background color */
+    color: black; /* Text color */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+}
+
+/* Optional: Add hover effect */
+.home-contact-button:hover {
+    background-color: black; 
+    color: #FAFBFB;
+}
+/* For Tablets and Smaller Screens */
+@media (max-width: 1024px) {
+    .index-hero-title {
+      font-size: 60px; /* Adjust font size for the title */
+    }
+
+    .projects-container-title {
+      font-size: 60px; /* Adjust project title size */
+    }
+
+    .projects-subtitle {
+      font-size: 18px; /* Adjust subtitle text size */
+    }
+
+    .get-in-touch-title {
+      font-size: 60px; /* Adjust 'Get in Touch' title size */
+    }
+
+    .working-with-us-container {
+      padding: 20px; /* Add padding for better spacing */
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 600px) {
+    /* Center hero content for mobile */
+    .index-hero {
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 10px; /* Add padding to reduce content width */
+    }
+
+    .index-hero-title-container {
+      text-align: center; /* Center content */
+    }
+
+    .index-hero-title {
+      font-size: 40px; /* Smaller font size for mobile */
+    }
+
+    .index-hero-title-top,
+    .index-hero-title-bottom {
+      font-size: 16px; /* Smaller subtitles */
+      margin: 10px;
+    }
+
+    .projects-container {
+      height: auto; /* Remove fixed height */
+      padding: 20px; /* Add padding to reduce content width */
+    }
+
+    .projects-container-title,
+    .get-in-touch-title {
+      font-size: 40px; /* Smaller font size */
+      text-align: center; /* Center content */
+    }
+
+    .projects-subtitle-container {
+      top: 100px; /* Adjust position */
+      left: 0%;
+      transform: translateX(0); /* Remove horizontal shift */
+    }
+
+    .projects-subtitle {
+      font-size: 16px; /* Smaller font size */
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .working-with-us-container {
+      height: auto;
+      padding: 10px;
+    }
+
+    .working-with-us-title-continer,
+    .get-in-touch-title-continer {
+      text-align: center; /* Center for mobile */
+      padding: 20px;
+    }
+
+    .working-with-us-paragraphs-container,
+    .get-in-touch-title-continer {
+      padding: 10px;
+    }
+
+    .working-with-us-paragraph {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .get-in-touch-title {
+      font-size: 66px;
+    }
+
+    /* Button Styles for Mobile */
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+}
