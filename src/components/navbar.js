@@ -14,8 +14,8 @@ export const Navbar = () => {
               <a className="nav-link" href="/about">
                 | ABOUT |
               </a>
-              <a className="nav-link" title="About Park" href="/bespoke">
-                BESPOKE
+              <a className="nav-link" title="About Park" href="/projects">
+                PROJECTS
               </a>
             </div>
           </div>

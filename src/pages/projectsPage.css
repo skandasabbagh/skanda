@@ -1,0 +1,290 @@
+.projects-hero {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../images/granny.png");
+    /* Set padding instead of fixed height */
+    padding: 20px; /* Add some padding to the section */
+    height: 80vh;
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative; /* Ensure container allows for precise positioning */
+    margin: 0; 
+  }
+
+  .projects-hero-title {
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-weight: bold;
+    font-size: 88px;
+    opacity: 60%;
+    /* margin-top: -80px; */
+  }
+
+  .all-videos {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    background-image: url("../images/projects-background.png");
+    height: auto;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    width: 100%;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+    padding-top: 30px;
+  }
+  
+  .videoSection {
+    display: flex; /* Use flex to align the video */
+    justify-content: center; /* Center the video by default */
+    /* height: 100vh; Full height for better vertical alignment */
+    align-items: center; /* Center the content within each section */
+    padding: 50px 0;
+  }
+  
+  #tekaz {
+    justify-content: flex-start; /* Align video to the left */
+  }
+  
+  #wishYouWereHere {
+    justify-content: center; /* Align video to the center */
+  }
+  
+  #blueprint {
+    justify-content: flex-end; /* Align video to the right */
+  }
+
+  .video-slide-in-left {
+    transform: translateX(-50%); /* Start slightly off-screen to the left */
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  
+  .video-slide-in-center {
+    transform: translateY(50px); /* Start slightly below */
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  
+  .video-slide-in-right {
+    transform: translateX(50%); /* Start slightly off-screen to the right */
+    opacity: 0;
+    transition: all 1s ease-out;
+  }
+  
+  /* Active classes that apply the final position */
+  .active-left,
+  .active-center,
+  .active-right {
+    transform: translateX(0); /* Move to original position */
+    opacity: 1;
+  }
+
+  .video-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .sound-toggle-button {
+    position: absolute;
+    top: 10px; /* Position button at the top right */
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  .sound-toggle-button:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+  }
+  
+.projects-logos-container{
+    display: flex-start;
+    flex-direction: column;
+    background-color: white;
+    /* background-image: url("../images/projects-background.png"); */
+    height: 20vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    width: 100%;
+    position: relative; /* Ensure container allows for precise positioning */
+    padding-left: 50px; /* Remove default padding */
+    margin: 0; 
+    padding-top: 30px;
+  }
+
+
+
+.projects-get-in-touch-container{
+    display: flex-start;
+    flex-direction: column;
+    background-image: url("../images/skanda-contact.jpeg");
+    height: 80vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top center;
+    width: 100%;
+    position: relative; /* Ensure container allows for precise positioning */
+    padding-left: 50px; /* Remove default padding */
+    margin: 0; 
+    filter: grayscale(100%); /* Apply grayscale to the background */
+
+   
+  }
+  .projects-get-in-touch-title-continer {
+    text-align: left;
+    position: relative; 
+    width: 250px;
+    top: 30px; 
+    padding: 0; 
+    margin: 0; 
+    
+  }
+
+  .projects-get-in-touch-title {
+    text-align: left;
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 800;
+    font-size: 100px;
+    opacity: 80%;
+    padding: 0; 
+    margin: 0;
+  }
+
+  .home-contact-button {
+    display: inline-block; /* Ensure it's treated as a block element */
+    padding: 10px 20px; /* Add padding for the button */
+    background-color: #FAFBFB; /* Button background color */
+    color: black; /* Text color */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+}
+
+/* Optional: Add hover effect */
+.home-contact-button:hover {
+    background-color: black; 
+    color: #FAFBFB;
+}
+/* For Tablets and Smaller Screens */
+@media (max-width: 1024px) {
+    .index-hero-title {
+      font-size: 60px; /* Adjust font size for the title */
+    }
+
+    .projects-container-title {
+      font-size: 60px; /* Adjust project title size */
+    }
+
+    .projects-subtitle {
+      font-size: 18px; /* Adjust subtitle text size */
+    }
+
+    .about-get-in-touch-title {
+      font-size: 60px; /* Adjust 'Get in Touch' title size */
+    }
+
+    .working-with-us-container {
+      padding: 20px; /* Add padding for better spacing */
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 600px) {
+    /* Center hero content for mobile */
+    .index-hero {
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 10px; /* Add padding to reduce content width */
+    }
+
+    .index-hero-title-container {
+      text-align: center; /* Center content */
+    }
+
+    .index-hero-title {
+      font-size: 40px; /* Smaller font size for mobile */
+    }
+
+    .index-hero-title-top,
+    .index-hero-title-bottom {
+      font-size: 16px; /* Smaller subtitles */
+      margin: 10px;
+    }
+
+    .projects-container {
+      height: auto; /* Remove fixed height */
+      padding: 20px; /* Add padding to reduce content width */
+    }
+
+    .projects-container-title,
+    .about-get-in-touch-title {
+      font-size: 40px; /* Smaller font size */
+      text-align: center; /* Center content */
+    }
+
+    .projects-subtitle-container {
+      top: 100px; /* Adjust position */
+      left: 0%;
+      transform: translateX(0); /* Remove horizontal shift */
+    }
+
+    .projects-subtitle {
+      font-size: 16px; /* Smaller font size */
+      text-align: center;
+      margin: 10px;
+      padding: 10px;
+    }
+
+    .working-with-us-container {
+      height: auto;
+      padding: 10px;
+    }
+
+    .working-with-us-title-continer,
+    .about-get-in-touch-title-continer {
+      text-align: center; /* Center for mobile */
+      padding: 20px;
+    }
+
+    .working-with-us-paragraphs-container,
+    .about-get-in-touch-title-continer {
+      padding: 10px;
+    }
+
+    .working-with-us-paragraph {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .about-get-in-touch-title {
+      font-size: 66px;
+    }
+
+    /* Button Styles for Mobile */
+    button {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+}
