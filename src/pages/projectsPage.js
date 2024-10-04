@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./projectsPage.css";
 import { Navbar } from "../components/navbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon component
@@ -7,7 +7,7 @@ import wishYouWereHere from "../videos/wish_you_were_here.mp4";
 import blueprint from "../videos/blueprint.mp4";
 import tekaz from "../videos/tekaz.mp4";
 
-const AboutPage = () => {
+const ProjectsPage = () => {
   // Create state variables to manage mute status for each video
   const [videoMuteStatus, setVideoMuteStatus] = useState({
     tekaz: true,
@@ -183,4 +183,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ProjectsPage;
