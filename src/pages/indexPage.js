@@ -54,11 +54,11 @@ const IndexPage = () => {
           {/* Overlay content */}
           <div className="index-hero-title-container">
             <h3 className="index-hero-title-top m-t=5">
-              COMPOSITION / PRODUCTION / SOUND DESIGN
+              Composition, production and sound design
             </h3>
             <h1 className="index-hero-title m-t=5">SKANDA SABBAGH</h1>
             <h3 className="index-hero-title-bottom m-t=5">
-              TRAILERS / FILMS / ALBUMS / COMMERCIALS
+              for film and advertising
             </h3>
           </div>
           {/* Sound Toggle Button */}

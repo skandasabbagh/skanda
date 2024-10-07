@@ -39,7 +39,7 @@ body, html {
     font-weight: 800;
     font-weight: bold;
     font-size: 88px;
-    opacity: 60%;
+    opacity: 80%;
   }
   .index-hero-content {
     position: relative;
@@ -47,9 +47,9 @@ body, html {
     text-align: center;
   }
   .index-hero-title-top, .index-hero-title-bottom {
-    font-family: "Special Elite", system-ui;
+    font-weight: 400;
     color: white;
-    opacity: 70%;
+    opacity: 80%;
   }
 
   .index-hero-title-top{
@@ -96,7 +96,7 @@ body, html {
 
 .projects-subtitle {
     color: #FFFF;
-    font-family: "Special Elite", system-ui;
+    /* font-family: "Special Elite", system-ui; */
     font-weight: 400;
     font-size: 24px;
     margin: 0; /* Remove default margin */
@@ -173,7 +173,7 @@ body, html {
 
 .working-with-us-paragraphs-container {
     flex: 2; /* Allow this column to take more space */
-    text-align: left; /* Left-align text */
+    text-align: center; /* Left-align text */
     padding: 20px; /* Add padding for spacing */
 }
 
@@ -181,6 +181,7 @@ body, html {
     margin: 10px 0; /* Space between paragraphs */
     font-family:Arial, Helvetica, sans-serif;
     font-weight: 100;
+    font-size: 20px;
 }
 
 .working-with-us-picture-container {
