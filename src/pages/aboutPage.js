@@ -25,19 +25,21 @@ const AboutPage = () => {
           <div class="paragraphs-column">
             <h2 class="touring-subtitle">TOURING & RECORDING</h2>
             <div class="touring-paragraph-1">
-              AS A PERCUSSIONIST, SKANDA SABBAGH HAS TOURED NATIONALLY &
-              INTERNATIONALLY (SXSW, WOMAD, CULLY JAZZ...) PRIMARILY WITH THE
-              15-PIECE WEST AFRICAN JAZZ SUPERGROUP BALIMAYA PROJECT.
+              As a north Londoner from north African descent, Skanda has toured
+              nationally and internationally (SXSW Austin, Womad, Cully Jazz)
+              with 15 piece West African Jazz Supergroup Balimaya Project.
             </div>
             <div class="touring-paragraph-2">
-              ORIGINALY RECORDING ON ATARIS AND DIY BUILT PCS IN THE EARLY
-              2000S, SKANDA HAS BEEN PRODUCING MUSIC FOR OVER 20 YEARS.
+              Pivoting in the pandemic in 2020, Skanda launched a new type beat
+              licensing youtube and online beat store (IC6_Beats) specializing
+              in high-energy Uk drill music and has accumulated hundreds of
+              thousands of views.
             </div>
-            <div class="touring-paragraph-3">
+            {/* <div class="touring-paragraph-3">
               IN 2020, SKANDA LAUNCHED A TYPE BEAT LICENSING YOUTUBE AND ONLINE
               BEAT STORE (IC6), SPECIALIZING IN HIGH ENERGY UK DRILL MUSIC AND
               HAS ACCUMULATED HUNDREDS OF THOUSANDS OF VIEWS.
-            </div>
+            </div> */}
             <div class="touring-paragraph-4">
               <img
                 src={ic6}
@@ -80,17 +82,20 @@ const AboutPage = () => {
           <div className="paragraph-column">
             <h2 className="background-subtitle">BACKGROUND</h2>
             <div className="background-paragraph-1">
-              STUDYING MUSIC PERFORMANCE AND COMPOSITION SKANDA GRADUATED FROM
-              KINGSTON UNIVERSITY LONDON AND WAS AWARDED A TRAVEL SCHOLARSHIP TO
-              EXTEND HIS STUDIES IN WEST AFRICAN PERCUSSION. +DAKAR/SENEGAL +
-              ABIDJAN/IVORY COAST + GHANA/ACCRA + MOROCCO/MARRAKESH
+              Skanda studied music performance and composition, graduating from
+              Kingston University and was awarded a travel scholarship to extend
+              his studies in West African Percussion and arranging. Skanda has
+              studied by ear with numerous masters including Moustapha Tettey
+              Ade (Ghana Accra), Kisama Djabate (Dakar, Senegal), Sidiki Dembele
+              (Abidjan, Ivory Coast), Khalifa Conte (Dakar, Senegal), Gnawa Dar
+              Marrakesh/Ali Iazane (Marrakesh, Morocco)
             </div>
             <div className="background-paragraph-2">
-              SKANDA ALSO WORKS PART TIME AT ARTS COUNCIL ENGLAND SPECIALISING
-              IN THE DEVELOPMENT, SUPPORT AND INCUBATION OF BLACK MUSIC
-              ORGANISATIONS AND ARTISTS. HIS WORK ALSO ADDRESSES THE AT RISK
-              GRASSROOTS ECOLOGY OF UK MUSIC SUPPORTING MUSIC VENUES, FESTIVALS
-              AND RECORDING STUDIOS ON THE EDGE OF CLOSURE
+              It is not always about the money - Skanda also supports Arts
+              Council England specialising in the development and incubation of
+              Black and Brown led music organisations and artists. his work also
+              addresses the at-risk grassroots ecology of UK music, supporting
+              music venues, festivals, and recording studios at risk of closure.
             </div>
           </div>
           <div className="image-column">

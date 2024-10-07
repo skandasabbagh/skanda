@@ -162,21 +162,24 @@ const IndexPage = () => {
           <div class="working-with-us-content">
             <div class="working-with-us-paragraphs-container">
               <p class="working-with-us-paragraph 1">
-                Specialising in the creation of music to sync to film and
-                visuals ...from the subtle to the epic, high energy or bubbly we
-                can fulfill your brief and vision with short turnarounds.
+                Skanda is a composer, beat maker, percussionist, and arranger
+                with an obsession for found noises, looping, sampling, layering
+                and chasing down new sounds. Specialising for over 10 years in
+                the licencing of UK Bass genres Drill, Grime, Dub, Garage but
+                can venture into Trap, House, Techno if relevant to the project
+                brief.
               </p>
               <p class="working-with-us-paragraph 2">
-                ELECTRONIC BASS MUSIC GENRES INC GRIME, DRILL AND DUB FUSED WITH
-                ORCHESTRAL SCORING, PERCUSSION AND ACCESS TO A BROAD NETWORK OF
-                COLLABORATERS INCLUDING SESSION MUSICIANS AND COMPOSERS FROM UK
-                JAZZ MIDDLE EASTERN AND WEST AFRICAN MUSIC GENRES.
+                From gritty orchestral scoring to film, to having the UKs best
+                sessions musicians from UK Jazz, Middle Eastern and West African
+                Diasporas only a phone call away, Skanda’s music thrives on the
+                edge of 2024’s musical possibilities…..
               </p>
               <p class="working-with-us-paragraph 3">
-                WE HAVE A VARIETY OF MUSIC AVAILABLE THAT CAN BE LICENCED
-                However WE ARE always interested to discuss composing music
-                specifically for your production requirements; you can contact
-                US VIA THIS WEBSITE ON THE CONTACT PAGE BELOW.
+                Skanda is always open to composing bespoke musical scores,
+                tailored to the clients production needs, with fast turn arounds
+                - Please feel free to reach out via the contact page below for
+                any inquiries.
               </p>
             </div>
             <div class="working-with-us-picture-container">

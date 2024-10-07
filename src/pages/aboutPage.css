@@ -49,7 +49,7 @@
     flex: 1; /* Allow the text column to take 1 part of the space */
     max-width: 40%; /* Limit to half the width */
     padding-left: 5px; /* Space between the image and text */
-    padding-top: 40px;
+    /* padding-top: 40px; */
 }
 
 .touring-subtitle {
@@ -112,17 +112,17 @@
     flex: 1; /* Allow the text column to take 1 part of the space */
     max-width: 40%; /* Limit to half the width */
     text-align: left;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 .background-subtitle {
     font-size: 24px; /* Subtitle font size */
-    margin-bottom: 5px; /* Reduced space below the subtitle */
+    margin-bottom: 20px; /* Reduced space below the subtitle */
 }
 
 .background-paragraph-1,
 .background-paragraph-2 {
-    margin-bottom: 5px; /* Reduced space between paragraphs */
+    margin-bottom: 20px; /* Reduced space between paragraphs */
 }
 
 .image-column {
