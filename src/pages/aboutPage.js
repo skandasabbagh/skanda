@@ -93,7 +93,7 @@ const AboutPage = () => {
             <div className="background-paragraph-2">
               It is not always about the money - Skanda also supports Arts
               Council England specialising in the development and incubation of
-              Black and Brown led music organisations and artists. his work also
+              Black and Brown led music organisations and artists. His work also
               addresses the at-risk grassroots ecology of UK music, supporting
               music venues, festivals, and recording studios at risk of closure.
             </div>
