@@ -7,6 +7,7 @@ import wishYouWereHere from "../videos/wish_you_were_here.mp4";
 import blueprint from "../videos/blueprint.mp4";
 import tekaz from "../videos/tekaz.mp4";
 import heroVideo from "../videos/hero-video.MP4";
+import drill from "../videos/drill.mp4";
 
 const ProjectsPage = () => {
   const [videoMuteStatus, setVideoMuteStatus] = useState({
@@ -14,6 +15,7 @@ const ProjectsPage = () => {
     wishYouWereHere: true,
     blueprint: true,
     heroVideo: true,
+    drill: true,
   });
 
   // Handle the sound toggle for specific videos
@@ -137,11 +139,11 @@ const ProjectsPage = () => {
             <div className="video-wrapper">
               <h3>Community Focus</h3>
               <video
-                src={blueprint}
-                id="blueprint"
+                src={drill}
+                id="drill"
                 autoPlay
                 loop
-                muted={videoMuteStatus.blueprint}
+                muted={videoMuteStatus.drill}
                 playsInline
                 className="video-slide-in-center"
               ></video>
@@ -153,7 +155,7 @@ const ProjectsPage = () => {
               </p>
               <button
                 className="sound-toggle-button"
-                onClick={() => handleSoundToggle("blueprint")}
+                onClick={() => handleSoundToggle("drill")}
               >
                 {videoMuteStatus.blueprint ? (
                   <FontAwesomeIcon
