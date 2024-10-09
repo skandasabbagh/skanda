@@ -219,7 +219,10 @@ const IndexPage = () => {
         <section class="get-in-touch-container">
           <div class="get-in-touch-title-continer">
             <div class="get-in-touch-title">GET IN TOUCH WITH US</div>
-            <a href="/contact" class="home-contact-button">
+            <a
+              href="mailto:your-email@example.com?subject=Your Subject Here&body=Your message here."
+              className="home-contact-button"
+            >
               CONTACT
             </a>
           </div>
