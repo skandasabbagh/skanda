@@ -9,6 +9,8 @@ import mobo from "../images/mobo.png";
 import bafta from "../images/bafta.png";
 
 const AboutPage = () => {
+  const email = "your-email@example.com";
+
   return (
     <div>
       <div class="main-page-container">
@@ -109,12 +111,7 @@ const AboutPage = () => {
         <section class="about-get-in-touch-container">
           <div class="about-get-in-touch-title-continer">
             <div class="about-get-in-touch-title">GET IN TOUCH WITH US</div>
-            <a
-              href="mailto:your-email@example.com?subject=Your Subject Here&body=Your message here."
-              className="home-contact-button"
-            >
-              CONTACT
-            </a>
+            <p className="home-contact-button">skanda@skandasabbagh.com</p>
           </div>
         </section>
       </div>

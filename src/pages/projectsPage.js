@@ -218,12 +218,7 @@ const ProjectsPage = () => {
             <div className="projects-get-in-touch-title">
               GET IN TOUCH WITH US
             </div>
-            <a
-              href="mailto:your-email@example.com?subject=Your Subject Here&body=Your message here."
-              className="home-contact-button"
-            >
-              CONTACT
-            </a>
+            <p className="home-contact-button">skanda@skandasabbagh.com</p>
           </div>
         </section>
       </div>
