@@ -81,23 +81,47 @@
         margin-bottom: 20px; /* Space between image and text on mobile */
     }
 }
-.about-logos-container{
-    display: flex-start;
-    flex-direction: column;
+.about-logos-container {
+    display: flex; /* Use flex for better alignment */
+    justify-content: center; /* Center logos */
+    align-items: center; /* Center vertically */
     background-image: url("../images/projects-background.png");
-    height: 20vh;
-    align-self: center;
+    height: 20vh; /* Height of the section */
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* Cover the whole section */
     background-attachment: fixed;
-    background-position: top center;
-    width: 100%;
-    position: relative; /* Ensure container allows for precise positioning */
-    padding-left: 50px; /* Remove default padding */
+    background-position: center; /* Center the background image */
+    width: 100%; /* Full width of the section */
+    position: relative; /* Position relative for proper layering */
+    padding: 20px; /* Add padding to avoid content touching edges */
     margin: 0; 
-    padding-top: 30px;
-   
-  }
+}
+
+/* New wrapper to manage logos */
+.logos-wrapper {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit max width to prevent overspill */
+    overflow: hidden; /* Prevent content from spilling out */
+}
+
+.about-logos-container ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-around; /* Space logos evenly */
+    align-items: center; /* Align logos vertically in the center */
+    margin: 0; /* Remove default margin */
+}
+
+.about-logos-container li {
+    flex: 0 1 auto; /* Allow items to flex, but not grow */
+    margin: 0 10px; /* Add space between logos */
+}
+
+.logos-image {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+}
 
 
 .background-container {

@@ -218,7 +218,7 @@ const ProjectsPage = () => {
             <div className="projects-get-in-touch-title">
               GET IN TOUCH WITH US
             </div>
-            <p className="home-contact-button">skanda@skandasabbagh.com</p>
+            <p className="home-contact-button">info@skandasabbagh.co.uk</p>{" "}
           </div>
         </section>
       </div>

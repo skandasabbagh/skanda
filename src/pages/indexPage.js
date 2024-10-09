@@ -11,6 +11,8 @@ import collage from "../images/collage.png";
 import artsCouncil from "../images/artCouncil.png";
 import mobo from "../images/mobo.png";
 import bafta from "../images/bafta.png";
+import wishYouWereHere from "../videos/wish_you_were_here.mp4";
+import blueprintVideo from "../videos/blueprint.mp4";
 
 const IndexPage = () => {
   const videoRef = useRef(null); // Reference to control the video
@@ -110,11 +112,16 @@ const IndexPage = () => {
           </div>
           <div className="media-container">
             <div className="media-item">
-              <img
-                src={blueprint}
-                alt="blueprint-still"
+              <video
+                src={blueprintVideo}
+                autoPlay
+                loop
+                muted
+                playsInline
                 style={{ width: "350px", height: "300px" }}
-              />
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              ></video>
             </div>
             <div className="media-item">
               <video
@@ -132,14 +139,16 @@ const IndexPage = () => {
               ></video>
             </div>
             <div className="media-item">
-              <img
-                src={granny}
-                alt="granny-still"
-                style={{
-                  width: "350px",
-                  height: "300px",
-                }}
-              />
+              <video
+                src={wishYouWereHere}
+                autoPlay
+                loop
+                muted
+                playsInline
+                style={{ width: "350px", height: "300px" }}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              ></video>
             </div>
             <div className="media-item">
               <video
@@ -186,40 +195,42 @@ const IndexPage = () => {
               <img src={collage} alt="collage" class="working-with-us-image" />
             </div>
           </div>
-          <section class="logos-container">
-            <ul>
-              <li>
-                <img
-                  src={artsCouncil}
-                  alt="collage"
-                  class="logos-image"
-                  style={{ width: "200px", height: "auto" }}
-                />
-              </li>
-              <li>
-                <img
-                  src={mobo}
-                  alt="mobo"
-                  class="logos-image"
-                  style={{ width: "200px", height: "auto" }}
-                />
-              </li>
-              <li>
-                <img
-                  src={bafta}
-                  alt="bafta"
-                  class="logos-image"
-                  style={{ width: "200px", height: "auto" }}
-                />
-              </li>
-            </ul>
+          <section class="about-logos-container">
+            <div className="logos-wrapper">
+              <ul>
+                <li>
+                  <img
+                    src={artsCouncil}
+                    alt="collage"
+                    class="logos-image"
+                    style={{ width: "200px", height: "auto" }}
+                  />
+                </li>
+                <li>
+                  <img
+                    src={mobo}
+                    alt="mobo"
+                    class="logos-image"
+                    style={{ width: "200px", height: "auto" }}
+                  />
+                </li>
+                <li>
+                  <img
+                    src={bafta}
+                    alt="bafta"
+                    class="logos-image"
+                    style={{ width: "200px", height: "auto" }}
+                  />
+                </li>
+              </ul>
+            </div>
           </section>
         </section>
 
         <section class="get-in-touch-container">
           <div class="get-in-touch-title-continer">
             <div class="get-in-touch-title">GET IN TOUCH WITH US</div>
-            <p className="home-contact-button">skanda@skandasabbagh.com</p>
+            <p className="home-contact-button">info@skandasabbagh.co.uk</p>
           </div>
         </section>
       </div>

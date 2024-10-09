@@ -53,32 +53,34 @@ const AboutPage = () => {
           </div>
         </section>
         <section class="about-logos-container">
-          <ul>
-            <li>
-              <img
-                src={artsCouncil}
-                alt="collage"
-                class="logos-image"
-                style={{ width: "200px", height: "auto" }}
-              />
-            </li>
-            <li>
-              <img
-                src={mobo}
-                alt="mobo"
-                class="logos-image"
-                style={{ width: "200px", height: "auto" }}
-              />
-            </li>
-            <li>
-              <img
-                src={bafta}
-                alt="bafta"
-                class="logos-image"
-                style={{ width: "200px", height: "auto" }}
-              />
-            </li>
-          </ul>
+          <div className="logos-wrapper">
+            <ul>
+              <li>
+                <img
+                  src={artsCouncil}
+                  alt="collage"
+                  class="logos-image"
+                  style={{ width: "200px", height: "auto" }}
+                />
+              </li>
+              <li>
+                <img
+                  src={mobo}
+                  alt="mobo"
+                  class="logos-image"
+                  style={{ width: "200px", height: "auto" }}
+                />
+              </li>
+              <li>
+                <img
+                  src={bafta}
+                  alt="bafta"
+                  class="logos-image"
+                  style={{ width: "200px", height: "auto" }}
+                />
+              </li>
+            </ul>
+          </div>
         </section>
         <section className="background-container">
           <div className="paragraph-column">
@@ -111,7 +113,7 @@ const AboutPage = () => {
         <section class="about-get-in-touch-container">
           <div class="about-get-in-touch-title-continer">
             <div class="about-get-in-touch-title">GET IN TOUCH WITH US</div>
-            <p className="home-contact-button">skanda@skandasabbagh.com</p>
+            <p className="home-contact-button">info@skandasabbagh.co.uk</p>{" "}
           </div>
         </section>
       </div>
