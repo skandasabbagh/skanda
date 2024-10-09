@@ -233,7 +233,7 @@ body, html {
     display: flex-start;
     flex-direction: column;
     background-image: url("../images/index-get-in-touch.png");
-    height: 60vh;
+    height: 80vh;
     align-self: center;
     background-repeat: no-repeat;
     background-size: cover;
