@@ -1,35 +1,47 @@
+/* Projects Hero Section */
 .projects-hero {
     display: flex;
     flex-direction: column;
-    background-image: url("../images/granny.png");
-    /* Set padding instead of fixed height */
-    padding: 20px; /* Add some padding to the section */
-    height: 80vh;
-    background-repeat: repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    padding: 20px;
+    height: 60vh;
     align-items: center;
     justify-content: center;
     width: 100%;
-    position: relative; /* Ensure container allows for precise positioning */
-    margin: 0; 
+    position: relative;
+    margin: 0;
+    overflow: hidden; /* Ensure the pseudo-element is contained */
   }
-
+  
+  .projects-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/projects-background.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1; /* Position it behind the main content */
+    filter: sepia(80%); /* Apply the sepia filter */
+    transform: scaleX(-1); /* Flip the background image horizontally */
+    opacity: 75%; /* Ensure full visibility */
+  }
+  
   .projects-hero-title {
     color: white;
     font-family: "Bebas Neue", sans-serif;
     font-weight: 800;
-    font-weight: bold;
     font-size: 88px;
-    opacity: 60%;
-    /* margin-top: -80px; */
+    opacity: 95%;
   }
-
+  
+  /* Main Video Container */
   .all-videos {
     display: flex;
-    flex-direction: column; /* Stack sections vertically */
+    flex-direction: column;
     background-image: url("../images/projects-background.png");
-    height: auto;
     align-self: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -37,68 +49,98 @@
     background-position: top center;
     width: 100%;
     position: relative;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 30px 20px;
     margin: 0;
-    padding-top: 30px;
+  }
+  .video-grid-container {
+    background-color: rgba(0, 0, 0, 0.8); /* 60% opacity */
   }
   
+  /* Individual Video Sections */
   .videoSection {
-    display: flex; /* Use flex to align the video */
-    justify-content: center; /* Center the video by default */
-    /* height: 100vh; Full height for better vertical alignment */
-    align-items: center; /* Center the content within each section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 50px 0;
   }
   
-  #tekaz {
-    justify-content: flex-start; /* Align video to the left */
-  }
-  
-  #wishYouWereHere {
-    justify-content: center; /* Align video to the center */
-  }
-  
-  #blueprint {
-    justify-content: flex-end; /* Align video to the right */
-  }
-
+  /* Video Slide-In Animations */
   .video-slide-in-left {
-    transform: translateX(-50%); /* Start slightly off-screen to the left */
+    transform: translateX(-50%);
     opacity: 0;
     transition: all 1s ease-out;
   }
   
   .video-slide-in-center {
-    transform: translateY(50px); /* Start slightly below */
+    transform: translateY(50px);
     opacity: 0;
     transition: all 1s ease-out;
   }
   
   .video-slide-in-right {
-    transform: translateX(50%); /* Start slightly off-screen to the right */
+    transform: translateX(50%);
     opacity: 0;
     transition: all 1s ease-out;
   }
   
-  /* Active classes that apply the final position */
   .active-left,
   .active-center,
   .active-right {
-    transform: translateX(0); /* Move to original position */
+    transform: translateX(0);
     opacity: 1;
   }
-
+  
+  /* Grid Layout for Video Section */
   .video-wrapper {
     position: relative;
-    display: inline-block;
+    width: 500px; /* Set the width for each video */
+    height: auto; /* Let the height expand with content */
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex; /* Use flexbox to stack elements vertically */
+    flex-direction: column; /* Stack title, video, and description in a column */
+    justify-self: center; /* Center each video-wrapper within its column */
+    align-items: center; /* Center align content */
+    /* text-align: center; Center text content */
   }
   
+  .video-wrapper h3 {
+    align-self: flex-start; /* Align h3 to the top left */
+    margin: 0; /* Remove any default margin */
+    padding-bottom: 10px; /* Add some spacing between the title and the video */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+  }
+  
+  .video-wrapper video {
+    width: 100%; /* Make the video fill the container's width */
+    max-height: 300px; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add spacing between video and description */
+  }
+  
+  .video-wrapper p {
+    text-align: center; /* Center-align the paragraph */
+    margin: 10px 0 0; 
+    font-size: 16px;
+    color: lightgrey; /* Light grey text for contrast */
+  }
+  
+  /* Adjust the .video-grid to ensure even spacing and layout */
+  .video-grid {
+    display: grid; /* Use grid display for precise control */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    grid-gap: 20px; /* Even spacing between items */
+    justify-content: center; /* Center the entire grid */
+    padding: 30px;
+  }
+
   .sound-toggle-button {
     position: absolute;
-    top: 10px; /* Position button at the top right */
+    top: 10px;
     right: 10px;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
     cursor: pointer;
     padding: 8px;
@@ -106,14 +148,14 @@
   }
   
   .sound-toggle-button:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+    background-color: rgba(0, 0, 0, 0.8);
   }
   
-.projects-logos-container{
-    display: flex-start;
+  /* Projects Logo Section */
+  .projects-logos-container {
+    display: flex;
     flex-direction: column;
     background-color: white;
-    /* background-image: url("../images/projects-background.png"); */
     height: 20vh;
     align-self: center;
     background-repeat: no-repeat;
@@ -121,16 +163,15 @@
     background-attachment: fixed;
     background-position: top center;
     width: 100%;
-    position: relative; /* Ensure container allows for precise positioning */
-    padding-left: 50px; /* Remove default padding */
-    margin: 0; 
+    position: relative;
+    padding-left: 50px;
+    margin: 0;
     padding-top: 30px;
   }
-
-
-
-.projects-get-in-touch-container{
-    display: flex-start;
+  
+  /* Contact Section */
+  .projects-get-in-touch-container {
+    display: flex;
     flex-direction: column;
     background-image: url("../images/skanda-contact.jpeg");
     height: 80vh;
@@ -140,23 +181,21 @@
     background-attachment: fixed;
     background-position: top center;
     width: 100%;
-    position: relative; /* Ensure container allows for precise positioning */
-    padding-left: 50px; /* Remove default padding */
-    margin: 0; 
-    filter: grayscale(100%); /* Apply grayscale to the background */
-
-   
+    position: relative;
+    padding-left: 50px;
+    margin: 0;
+    filter: grayscale(100%);
   }
+  
   .projects-get-in-touch-title-continer {
     text-align: left;
-    position: relative; 
+    position: relative;
     width: 250px;
-    top: 30px; 
-    padding: 0; 
-    margin: 0; 
-    
+    top: 30px;
+    padding: 0;
+    margin: 0;
   }
-
+  
   .projects-get-in-touch-title {
     text-align: left;
     color: white;
@@ -164,127 +203,72 @@
     font-weight: 800;
     font-size: 100px;
     opacity: 80%;
-    padding: 0; 
+    padding: 0;
     margin: 0;
   }
-
+  
+  /* Contact Button */
   .home-contact-button {
-    display: inline-block; /* Ensure it's treated as a block element */
-    padding: 10px 20px; /* Add padding for the button */
-    background-color: #FAFBFB; /* Button background color */
-    color: black; /* Text color */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-}
-
-/* Optional: Add hover effect */
-.home-contact-button:hover {
-    background-color: black; 
-    color: #FAFBFB;
-}
-/* For Tablets and Smaller Screens */
-@media (max-width: 1024px) {
-    .index-hero-title {
-      font-size: 60px; /* Adjust font size for the title */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fafbfb;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .home-contact-button:hover {
+    background-color: black;
+    color: #fafbfb;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .projects-hero-title {
+      font-size: 60px;
     }
-
-    .projects-container-title {
-      font-size: 60px; /* Adjust project title size */
+  
+    .projects-get-in-touch-title {
+      font-size: 66px;
     }
-
-    .projects-subtitle {
-      font-size: 18px; /* Adjust subtitle text size */
-    }
-
-    .about-get-in-touch-title {
-      font-size: 60px; /* Adjust 'Get in Touch' title size */
-    }
-
-    .working-with-us-container {
-      padding: 20px; /* Add padding for better spacing */
-    }
-}
-
-/* For Mobile Devices */
-@media (max-width: 600px) {
-    /* Center hero content for mobile */
+    .video-grid {
+        grid-template-columns: 1fr 1fr; /* Two columns for tablets */
+      }
+    
+      .video-wrapper {
+        width: 400px; /* Slightly smaller for tablets */
+      }
+  }
+  
+  @media (max-width: 600px) {
     .index-hero {
       height: 100vh;
       align-items: center;
       justify-content: center;
-      padding: 10px; /* Add padding to reduce content width */
-    }
-
-    .index-hero-title-container {
-      text-align: center; /* Center content */
-    }
-
-    .index-hero-title {
-      font-size: 40px; /* Smaller font size for mobile */
-    }
-
-    .index-hero-title-top,
-    .index-hero-title-bottom {
-      font-size: 16px; /* Smaller subtitles */
-      margin: 10px;
-    }
-
-    .projects-container {
-      height: auto; /* Remove fixed height */
-      padding: 20px; /* Add padding to reduce content width */
-    }
-
-    .projects-container-title,
-    .about-get-in-touch-title {
-      font-size: 40px; /* Smaller font size */
-      text-align: center; /* Center content */
-    }
-
-    .projects-subtitle-container {
-      top: 100px; /* Adjust position */
-      left: 0%;
-      transform: translateX(0); /* Remove horizontal shift */
-    }
-
-    .projects-subtitle {
-      font-size: 16px; /* Smaller font size */
-      text-align: center;
-      margin: 10px;
       padding: 10px;
     }
-
-    .working-with-us-container {
-      height: auto;
-      padding: 10px;
+  
+    .projects-get-in-touch-title {
+      font-size: 40px;
     }
-
-    .working-with-us-title-continer,
-    .about-get-in-touch-title-continer {
-      text-align: center; /* Center for mobile */
-      padding: 20px;
-    }
-
-    .working-with-us-paragraphs-container,
-    .about-get-in-touch-title-continer {
-      padding: 10px;
-    }
-
-    .working-with-us-paragraph {
+  
+    .home-contact-button {
       font-size: 14px;
-      line-height: 1.6;
+      padding: 8px 16px;
     }
-
-    .about-get-in-touch-title {
-      font-size: 66px;
+  
+    .video-list {
+      grid-template-columns: 1fr; /* Stack videos in one column for mobile */
     }
-
-    /* Button Styles for Mobile */
-    button {
-      font-size: 16px;
-      padding: 10px 20px;
-    }
-}
+    .video-grid {
+        grid-template-columns: 1fr; /* Single column layout for mobile */
+      }
+    
+      .video-wrapper {
+        width: 100%; /* Full width for mobile screens */
+      }
+  }
