@@ -5,7 +5,7 @@ import touring from "../images/touring-collage.png";
 import ic6 from "../images/ic6.png";
 import backgroundCollage from "../images/background-collage.png";
 import artsCouncil from "../images/artCouncil.png";
-import mobo from "../images/mobo.png";
+import mobo from "../images/mobo.jpeg";
 import bafta from "../images/bafta.png";
 
 const AboutPage = () => {
@@ -27,9 +27,10 @@ const AboutPage = () => {
           <div class="paragraphs-column">
             <h2 class="touring-subtitle">TOURING & RECORDING</h2>
             <div class="touring-paragraph-1">
-              As a north Londoner from north African descent, Skanda has toured
+              As a North Londoner of North African descent, Skanda has toured
               nationally and internationally (SXSW Austin, Womad, Cully Jazz)
-              with 15 piece West African Jazz Supergroup Balimaya Project.
+              and sold out Ronnie Scotts and mainstage Barbican with the
+              15-piece West African jazz supergroup, Balimaya Project.
             </div>
             <div class="touring-paragraph-2">
               Pivoting in the pandemic in 2020, Skanda launched a new type beat
@@ -95,11 +96,12 @@ const AboutPage = () => {
               Marrakesh/Ali Iazane (Marrakesh, Morocco)
             </div>
             <div className="background-paragraph-2">
-              It is not always about the money - Skanda also supports Arts
-              Council England specialising in the development and incubation of
-              Black and Brown led music organisations and artists. His work also
+              t's not always about the money—Skanda also supports Arts Council
+              England, specialising in the development and capacity building of
+              Black and Brown-led music organisations and artists. His work also
               addresses the at-risk grassroots ecology of UK music, supporting
-              music venues, festivals, and recording studios at risk of closure.
+              music venues, festivals, and recording studios facing potential
+              closure.
             </div>
           </div>
           <div className="image-column">
@@ -113,7 +115,7 @@ const AboutPage = () => {
         <section class="about-get-in-touch-container">
           <div class="about-get-in-touch-title-continer">
             <div class="about-get-in-touch-title">GET IN TOUCH WITH US</div>
-            <p className="home-contact-button">info@skandasabbagh.co.uk</p>{" "}
+            <p className="email-address">info@skandasabbagh.co.uk</p>
           </div>
         </section>
       </div>

@@ -50,6 +50,7 @@ body, html {
     font-weight: 400;
     color: white;
     opacity: 80%;
+    font-family: "Special Elite", system-ui;
   }
 
   .index-hero-title-top{
@@ -92,6 +93,7 @@ body, html {
 .projects-subtitle-container {
     text-align: right; /* Center the subtitle */
     margin-bottom: 20px; /* Space below the subtitle */
+    font-family: "Special Elite", system-ui;
 }
 
 .projects-subtitle {
@@ -104,24 +106,23 @@ body, html {
     opacity: 80%;
 }
 
-  .media-container {
+.media-container {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap */
-    justify-content: center; /* Center the items */
-    padding: 0 10px; /* Optional: Add some padding */
-    width: 100%; /* Ensure full width */
-    margin: 0 auto; /* Center the container */
-}
-
-.media-item {
-    display: flex;
-    flex-direction: column; /* Stack image and video */
-    align-items: center; /* Center items within each media item */
-    margin: 10px; /* Space between items */
-    max-width: calc(25% - 20px); /* Four items per row with margin */
-    width: calc(25% - 20px); /* Add width here to ensure it respects the container size */
-    box-sizing: border-box; /* Include padding and border in width */
-}
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .media-item {
+    width: 100%;
+    max-width: 350px; /* You can adjust this */
+    flex: 1 1 auto;
+  }
+  
+  .media-item video {
+    width: 100%;
+    height: auto; /* This makes the video height scale proportionally */
+  }
 
 /* Responsive Styles */
 @media (max-width: 1024px) {
@@ -223,17 +224,62 @@ body, html {
     }
 }
 
-.logos-container{
-    margin: 0;
-    margin-top: -20px;
-    display: inline-flex;
-    justify-content: space-between;
+.about-logos-container {
+    display: flex; /* Use flex for better alignment */
+    justify-content: center; /* Center logos */
+    align-items: center; /* Center vertically */
+    background-image: url("../images/projects-background.png");
+    height: 20vh; /* Height of the section */
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the whole section */
+    background-attachment: fixed;
+    background-position: center; /* Center the background image */
+    width: 100%; /* Full width of the section */
+    position: relative; /* Position relative for proper layering */
+    padding: 20px; /* Add padding to avoid content touching edges */
+    margin: 0; 
 }
+
+/* New wrapper to manage logos */
+.logos-wrapper {
+    width: 100%; /* Full width */
+    max-width: 1200px; /* Limit max width to prevent overspill */
+    overflow: hidden; /* Prevent content from spilling out */
+}
+
+.about-logos-container ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-around; /* Space logos evenly */
+    align-items: center; /* Align logos vertically in the center */
+    margin: 0; /* Remove default margin */
+}
+
+.about-logos-container li {
+    flex: 0 1 auto; /* Allow items to flex, but not grow */
+    margin: 0 10px; /* Add space between logos */
+    background-color: transparent; /* Or set this to match your container color */
+
+}
+
+.logos-image {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    -webkit-backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    image-rendering: -webkit-optimize-contrast; /* Chrome, Safari */
+    image-rendering: crisp-edges; /* For Firefox */
+    image-rendering: pixelated; /* For other browsers */
+    box-shadow: none;
+
+}
+
   .get-in-touch-container{
     display: flex-start;
     flex-direction: column;
     background-image: url("../images/index-get-in-touch.png");
-    height: 80vh;
+    height: 70vh;
     align-self: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -265,24 +311,15 @@ body, html {
     margin: 0;
   }
 
-  .home-contact-button {
-    display: inline-block; /* Ensure it's treated as a block element */
-    padding: 10px 20px; /* Add padding for the button */
-    background-color: #FAFBFB; /* Button background color */
-    color: black; /* Text color */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    font-size: 16px; /* Font size */
-}
+  .email-address{
+    font-family: "Bebas Neue", sans-serif;
+    font-size:80px;
+    color: white;
+    opacity: 80%;
+    
+  }
 
-/* Optional: Add hover effect */
-.home-contact-button:hover {
-    background-color: black; 
-    color: #FAFBFB;
-}
+
 /* For Tablets and Smaller Screens */
 @media (max-width: 1024px) {
     .index-hero-title {
@@ -339,7 +376,18 @@ body, html {
     .get-in-touch-title {
       font-size: 40px; /* Smaller font size */
       text-align: center; /* Center content */
+      opacity: 100%;
+
+
     }
+
+    .email-address{
+        font-family: "Bebas Neue", sans-serif;
+        font-size:30px;
+        color: white;
+        opacity: 100%;
+        
+      }
 
     .projects-subtitle-container {
       top: 100px; /* Adjust position */

@@ -11,11 +11,11 @@ export const Navbar = () => {
               <a className="nav-link" href="/">
                 HOME
               </a>
-              <a className="nav-link" href="/about">
-                | ABOUT |
-              </a>
-              <a className="nav-link" title="About Park" href="/projects">
+              <a className="nav-link" href="/projects">
                 PROJECTS
+              </a>
+              <a className="nav-link" href="/about">
+                ABOUT
               </a>
             </div>
           </div>

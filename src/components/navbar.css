@@ -10,40 +10,56 @@
   }
   
   /* Navigation link styling */
-  .topnav a {
+  .topnav .navbar-nav .nav-link {
     display: inline-block; /* Align links horizontally */
-    float: left; /* Ensure links float to the left */
-    color: #FFFF;
-    text-align: left; /* Align text inside each link to the left */
-    padding: 10px 15px; /* Padding around links */
+    color: #FFF; /* White text */
+    padding: 10px 10px; /* Padding around links */
     text-decoration: none;
     font-size: 20px;
-    /* font-family: "Noto Sans JP", sans-serif; */
     font-family: "Special Elite", system-ui;
     font-weight: 700;
+    position: relative; /* Position for the separator */
+    margin-right: 10px; /* Add spacing between the links */
+  }
+  
+  .topnav .navbar-nav .nav-link::after {
+    content: ''; /* Empty content to create the border */
+    position: absolute;
+    right: -5px; /* Adjust position to align the separator */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 50%; /* Height of the separator */
+    background-color: #fff; /* Color of the separator */
+  }
+  
+  /* Remove the separator after the last link */
+  .topnav .navbar-nav .nav-link:last-child::after {
+    display: none;
   }
   
   /* Change the color of links on hover */
-  .topnav a:hover {
+  .topnav .navbar-nav .nav-link:hover {
     color: black;
     border-radius: 15px;
   }
   
   /* Style for active/current link */
-  .topnav a.active {
+  .topnav .navbar-nav .nav-link.active {
     text-decoration: underline;
     color: grey;
     border-radius: 15px;
   }
+
+  /* Media query for mobile devices */
+@media (max-width: 768px) {
+    .topnav {
+      justify-content: center; /* Center the items on smaller screens */
+    }
   
-  /* Remove list styling */
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  /* Ensure inline display */
-  li {
-    display: inline;
-    border-left: solid 1px  #80EFFE;
+    .topnav .navbar-nav .nav-link {
+      font-size: 16px; /* Adjust font size for mobile */
+      padding: 5px 10px; /* Adjust padding for mobile */
+      margin: 0 5px; /* Reduce spacing between links */
+    }
   }

@@ -8,14 +8,15 @@ import blueprint from "../videos/blueprint.mp4";
 import tekaz from "../videos/tekaz.mp4";
 import heroVideo from "../videos/hero-video.MP4";
 import drill from "../videos/drill.mp4";
+import cf from "../videos/CF.mp4";
 
 const ProjectsPage = () => {
   const [videoMuteStatus, setVideoMuteStatus] = useState({
-    tekaz: true,
-    wishYouWereHere: true,
-    blueprint: true,
-    heroVideo: true,
-    drill: true,
+    tekaz: false,
+    wishYouWereHere: false,
+    blueprint: false,
+    heroVideo: false,
+    cf: false,
   });
 
   // Handle the sound toggle for specific videos
@@ -66,36 +67,17 @@ const ProjectsPage = () => {
               <video
                 src={wishYouWereHere}
                 id="wishYouWereHere"
-                autoPlay
-                loop
-                muted={videoMuteStatus.wishYouWereHere}
+                controls
+                muted={videoMuteStatus.wishYouWereHere} // Allow user to toggle sound via button
                 playsInline
                 className="video-slide-in-center"
               ></video>
               <p>
                 Bafta Nominated Short Film depicting a lonely elderly pensioner
                 that turns to trolling social media for social interaction. Dark
-                humour with noteworthy and intense, uneasy soundtracking to
+                humour with noteworthy intense and uneasy soundtracking to
                 reflect social isolation and OAP adrenaline.
               </p>
-              <button
-                className="sound-toggle-button"
-                onClick={() => handleSoundToggle("wishYouWereHere")}
-              >
-                {videoMuteStatus.wishYouWereHere ? (
-                  <FontAwesomeIcon
-                    icon={faVolumeMute}
-                    size="2x"
-                    color="white"
-                  />
-                ) : (
-                  <FontAwesomeIcon
-                    icon={faVolumeHigh}
-                    size="2x"
-                    color="white"
-                  />
-                )}
-              </button>
             </div>
 
             {/* Video 2 */}
@@ -104,46 +86,27 @@ const ProjectsPage = () => {
               <video
                 src={blueprint}
                 id="blueprint"
-                autoPlay
-                loop
+                controls
                 muted={videoMuteStatus.blueprint}
                 playsInline
                 className="video-slide-in-center"
               ></video>
               <p>
                 High energy African drums and polyrhythms reflecting the
-                resilience and dynamism of supporting Global Majority applicants
-                to navigate the current climate.
+                resilience and dynamic approach of BFA recruitment charity to
+                support young Global Majority people to navigate the current
+                climate and find fruitful pathways to employment.
               </p>
-              <button
-                className="sound-toggle-button"
-                onClick={() => handleSoundToggle("blueprint")}
-              >
-                {videoMuteStatus.blueprint ? (
-                  <FontAwesomeIcon
-                    icon={faVolumeMute}
-                    size="2x"
-                    color="white"
-                  />
-                ) : (
-                  <FontAwesomeIcon
-                    icon={faVolumeHigh}
-                    size="2x"
-                    color="white"
-                  />
-                )}
-              </button>
             </div>
 
             {/* Video 3 */}
             <div className="video-wrapper">
               <h3>Community Focus</h3>
               <video
-                src={drill}
-                id="drill"
-                autoPlay
-                loop
-                muted={videoMuteStatus.drill}
+                src={cf}
+                id="cf"
+                controls
+                muted={videoMuteStatus.cf}
                 playsInline
                 className="video-slide-in-center"
               ></video>
@@ -153,24 +116,6 @@ const ProjectsPage = () => {
                 ‘Community Focus’ to create access to life changing and
                 inclusivity for people with disabilities.
               </p>
-              <button
-                className="sound-toggle-button"
-                onClick={() => handleSoundToggle("drill")}
-              >
-                {videoMuteStatus.blueprint ? (
-                  <FontAwesomeIcon
-                    icon={faVolumeMute}
-                    size="2x"
-                    color="white"
-                  />
-                ) : (
-                  <FontAwesomeIcon
-                    icon={faVolumeHigh}
-                    size="2x"
-                    color="white"
-                  />
-                )}
-              </button>
             </div>
 
             {/* Video 4 */}
@@ -179,8 +124,7 @@ const ProjectsPage = () => {
               <video
                 src={tekaz}
                 id="tekaz"
-                autoPlay
-                loop
+                controls
                 muted={videoMuteStatus.tekaz}
                 playsInline
                 className="video-slide-in-center"
@@ -191,24 +135,6 @@ const ProjectsPage = () => {
                 walls of sound, gliding uncontrollable bass, found sounds and
                 percussion.
               </p>
-              <button
-                className="sound-toggle-button"
-                onClick={() => handleSoundToggle("tekaz")}
-              >
-                {videoMuteStatus.tekaz ? (
-                  <FontAwesomeIcon
-                    icon={faVolumeMute}
-                    size="2x"
-                    color="white"
-                  />
-                ) : (
-                  <FontAwesomeIcon
-                    icon={faVolumeHigh}
-                    size="2x"
-                    color="white"
-                  />
-                )}
-              </button>
             </div>
           </section>
         </div>
@@ -218,7 +144,7 @@ const ProjectsPage = () => {
             <div className="projects-get-in-touch-title">
               GET IN TOUCH WITH US
             </div>
-            <p className="home-contact-button">info@skandasabbagh.co.uk</p>{" "}
+            <p className="email-address">info@skandasabbagh.co.uk</p>
           </div>
         </section>
       </div>

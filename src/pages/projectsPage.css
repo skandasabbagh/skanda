@@ -207,24 +207,13 @@
     margin: 0;
   }
   
-  /* Contact Button */
-  .home-contact-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fafbfb;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  .email-address{
+    font-family: "Bebas Neue", sans-serif;
+    font-size:80px;
+    color: white;
+    opacity: 80%;
   }
-  
-  .home-contact-button:hover {
-    background-color: black;
-    color: #fafbfb;
-  }
+
   
   /* Responsive Styles */
   @media (max-width: 1024px) {
@@ -256,11 +245,13 @@
       font-size: 40px;
     }
   
-    .home-contact-button {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  
+    .email-address{
+        font-family: "Bebas Neue", sans-serif;
+        font-size:30px;
+        color: white;
+        opacity: 100%;
+        
+      }
     .video-list {
       grid-template-columns: 1fr; /* Stack videos in one column for mobile */
     }
