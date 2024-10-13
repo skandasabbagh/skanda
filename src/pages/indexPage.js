@@ -50,10 +50,10 @@ const IndexPage = () => {
   });
 
   const [isMuted, setIsMuted] = useState({
-    blueprintVideo: true,
-    drill: true,
-    wishYouWereHere: true,
-    heroVideo: true,
+    blueprintVideo: false,
+    drill: false,
+    wishYouWereHere: false,
+    heroVideo: false,
   });
 
   const videoRefs = {
