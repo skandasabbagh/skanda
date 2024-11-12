@@ -1,27 +1,21 @@
 import React, { useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon component
-import {
-  faPlay,
-  faPause,
-  faVolumeHigh,
-  faVolumeMute,
-} from "@fortawesome/free-solid-svg-icons";
+import { faVolumeHigh, faVolumeMute } from "@fortawesome/free-solid-svg-icons";
 import "./index.css";
 import { Navbar } from "../components/navbar";
-import heroVideo from "../videos/home-BANNERVIDEO.mp4";
-import drill from "../videos/home-TEKAZ.mp4";
-import blueprint from "../images/blueprint.png";
-import granny from "../images/granny.png";
 import collage from "../images/collage.png";
 import artsCouncil from "../images/artCouncil.png";
 import mobo from "../images/mobo.jpeg";
 import bafta from "../images/bafta.png";
-import wishYouWereHere from "../videos/home-wish.mp4";
-import blueprintVideo from "../videos/home-BFA.mp4";
+import { homeVideosUrls } from "../constants";
+
+const blueprintVideo = homeVideosUrls[0];
+const drill = homeVideosUrls[2];
+const wishYouWereHere = homeVideosUrls[1];
+const heroVideo = homeVideosUrls[3];
 
 const IndexPage = () => {
   const videoRef = useRef(null); // Reference to control the video
-  // const [isMuted, setIsMuted] = useState(true); // State to track mute status
 
   // Function to toggle mute/unmute
   const handleSoundToggle = () => {
@@ -31,23 +25,6 @@ const IndexPage = () => {
       setIsMuted(video.muted);
     }
   };
-  // const handleMouseEnter = (e) => {
-  //   e.target.muted = false; // Unmute on hover
-  //   e.target.play().catch((error) => {
-  //     console.error("Playback failed: ", error);
-  //   }); // Play the video
-  // };
-
-  // const handleMouseLeave = (e) => {
-  //   e.target.muted = true; // Mute when not hovering
-  //   e.target.pause(); // Pause the video
-  // };
-  const [playing, setPlaying] = useState({
-    blueprintVideo: false,
-    drill: false,
-    wishYouWereHere: false,
-    heroVideo: false,
-  });
 
   const [isMuted, setIsMuted] = useState({
     blueprintVideo: false,
@@ -61,26 +38,6 @@ const IndexPage = () => {
     drill: useRef(null),
     wishYouWereHere: useRef(null),
     heroVideo: useRef(null),
-  };
-
-  // Function to handle play/pause for each video
-  const handlePlayPause = (videoKey) => {
-    const video = videoRefs[videoKey].current;
-
-    if (video.paused) {
-      video.play();
-      setPlaying((prevState) => ({ ...prevState, [videoKey]: true }));
-    } else {
-      video.pause();
-      setPlaying((prevState) => ({ ...prevState, [videoKey]: false }));
-    }
-  };
-
-  // Function to toggle mute/unmute for each video
-  const handleMuteToggle = (videoKey) => {
-    const video = videoRefs[videoKey].current;
-    video.muted = !video.muted;
-    setIsMuted((prevState) => ({ ...prevState, [videoKey]: video.muted }));
   };
 
   return (
@@ -100,7 +57,6 @@ const IndexPage = () => {
           <Navbar />
           {/* Overlay content */}
           <div className="index-hero-title-container">
-            <h3 className="index-hero-title-top m-t=5"></h3>
             <h1 className="index-hero-title m-t=5">SKANDA SABBAGH</h1>
             <h3 className="index-hero-title-bottom m-t=5">
               Composition, production and sound design for film and advertising
@@ -217,16 +173,13 @@ const IndexPage = () => {
                 From gritty orchestral scoring for film to having the UK’s best
                 session musicians from UK Jazz, Middle Eastern, and West African
                 diasporas just a phone call away, Skanda’s music thrives at the
-                cutting edge of 2024’s musical possibilities. Skanda is always
-                open to composing bespoke musical scores tailored to the
-                client’s production needs, with fast turnarounds. Please feel
-                free to reach out via the contact page below for any inquiries.
+                cutting edge of 2024’s musical possibilities.
               </p>
               <p class="working-with-us-paragraph 3">
                 Skanda is always open to composing bespoke musical scores
                 tailored to the client’s production needs, with fast
-                turnarounds. Please feel free to reach out via the contact page
-                below for any inquiries.
+                turnarounds. Please feel free to reach out via
+                info@skandasabbagh.co.uk for any inquiries.
               </p>
             </div>
             <div class="working-with-us-picture-container">

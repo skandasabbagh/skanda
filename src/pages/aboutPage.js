@@ -9,8 +9,6 @@ import mobo from "../images/mobo.jpeg";
 import bafta from "../images/bafta.png";
 
 const AboutPage = () => {
-  const email = "your-email@example.com";
-
   return (
     <div>
       <div class="main-page-container">
@@ -28,15 +26,15 @@ const AboutPage = () => {
             <h2 class="touring-subtitle">TOURING & RECORDING</h2>
             <div class="touring-paragraph-1">
               As a North Londoner of North African descent, Skanda has toured
-              nationally and internationally (SXSW Austin, Womad, Cully Jazz)
-              and sold out Ronnie Scotts and mainstage Barbican with the
-              15-piece West African jazz supergroup, Balimaya Project.
+              internationaly (SXSW Austin, Womad, Womex) and sold out Ronnie
+              Scotts and mainstage Barbican with the 15-piece West African jazz
+              supergroup, Balimaya Project.
             </div>
             <div class="touring-paragraph-2">
               Pivoting in the pandemic in 2020, Skanda launched a new type beat
-              licensing youtube and online beat store (IC6_Beats) specializing
-              in high-energy Uk drill music and has accumulated hundreds of
-              thousands of views.
+              YouTube channel (1.57k subscribers) and online beat licensing
+              store (IC6_Beats) specializing in high-energy Uk drill music and
+              has accumulated hundreds of thousands of views.
             </div>
             <div class="touring-paragraph-4">
               <img
@@ -91,12 +89,12 @@ const AboutPage = () => {
               Marrakesh/Ali Iazane (Marrakesh, Morocco)
             </div>
             <div className="background-paragraph-2">
-              It's not always about the money—Skanda also supports Arts Council
-              England, specialising in the development and capacity building of
-              Black and Brown-led music organisations and artists. His work also
-              addresses the at-risk grassroots ecology of UK music, supporting
-              music venues, festivals, and recording studios facing potential
-              closure.
+              It's not always about the money—Skanda is also a liaison for Arts
+              Council England, specialising in the development and capacity
+              building of Black and Brown-led music organisations and artists.
+              His work also addresses the at-risk grassroots ecology of UK
+              music, supporting music venues, festivals, and recording studios
+              facing potential closure.
             </div>
           </div>
           <div className="image-column">

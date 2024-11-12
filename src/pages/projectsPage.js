@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import "./projectsPage.css";
 import { Navbar } from "../components/navbar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faVolumeHigh, faVolumeMute } from "@fortawesome/free-solid-svg-icons";
-import wishYouWereHere from "../videos/wish_you_were_here.mp4";
-import blueprint from "../videos/blueprint.mp4";
-import tekaz from "../videos/tekaz.mp4";
-import heroVideo from "../videos/hero-video.MP4";
-import drill from "../videos/drill.mp4";
-import cf from "../videos/CF.mp4";
+import { projectsVideosUrls } from "../constants";
+
+const tekaz = projectsVideosUrls[0];
+const blueprint = projectsVideosUrls[1];
+const wishYouWereHere = projectsVideosUrls[3];
+const cf = projectsVideosUrls[2];
 
 const ProjectsPage = () => {
   const [videoMuteStatus, setVideoMuteStatus] = useState({
@@ -18,18 +16,6 @@ const ProjectsPage = () => {
     heroVideo: false,
     cf: false,
   });
-
-  // Handle the sound toggle for specific videos
-  const handleSoundToggle = (videoId) => {
-    const video = document.getElementById(videoId);
-    if (video) {
-      video.muted = !video.muted;
-      setVideoMuteStatus((prevState) => ({
-        ...prevState,
-        [videoId]: video.muted,
-      }));
-    }
-  };
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -92,7 +78,7 @@ const ProjectsPage = () => {
                 className="video-slide-in-center"
               ></video>
               <p>
-                High energy African drums and polyrhythms reflecting the
+                High energy African drums and polyrhythms platforming the
                 resilience and dynamic approach of BFA recruitment charity to
                 support young Global Majority people to navigate the current
                 climate and find fruitful pathways to employment.
@@ -111,8 +97,8 @@ const ProjectsPage = () => {
                 className="video-slide-in-center"
               ></video>
               <p>
-                Upbeat and celebratory sounds live drums and sampled solo
-                trumpets reflecting the positive advocacy and charitable work of
+                Upbeat and celebratory sounds, live drums and sampled solo
+                trumpets showcasing the positive advocacy and charitable work of
                 ‘Community Focus’ to create access to life changing and
                 inclusivity for people with disabilities.
               </p>
