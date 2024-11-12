@@ -75,7 +75,7 @@ const ProjectsPage = () => {
               <p>
                 Bafta Nominated Short Film depicting a lonely elderly pensioner
                 that turns to trolling social media for social interaction. Dark
-                humour with noteworthy intense and uneasy soundtracking to
+                humour with noteworthy intense anduneasy soundtracking to
                 reflect social isolation and OAP adrenaline.
               </p>
             </div>

@@ -38,11 +38,6 @@ const AboutPage = () => {
               in high-energy Uk drill music and has accumulated hundreds of
               thousands of views.
             </div>
-            {/* <div class="touring-paragraph-3">
-              IN 2020, SKANDA LAUNCHED A TYPE BEAT LICENSING YOUTUBE AND ONLINE
-              BEAT STORE (IC6), SPECIALIZING IN HIGH ENERGY UK DRILL MUSIC AND
-              HAS ACCUMULATED HUNDREDS OF THOUSANDS OF VIEWS.
-            </div> */}
             <div class="touring-paragraph-4">
               <img
                 src={ic6}
@@ -96,7 +91,7 @@ const AboutPage = () => {
               Marrakesh/Ali Iazane (Marrakesh, Morocco)
             </div>
             <div className="background-paragraph-2">
-              t's not always about the money—Skanda also supports Arts Council
+              It's not always about the money—Skanda also supports Arts Council
               England, specialising in the development and capacity building of
               Black and Brown-led music organisations and artists. His work also
               addresses the at-risk grassroots ecology of UK music, supporting

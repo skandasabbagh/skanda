@@ -217,7 +217,10 @@ const IndexPage = () => {
                 From gritty orchestral scoring for film to having the UK’s best
                 session musicians from UK Jazz, Middle Eastern, and West African
                 diasporas just a phone call away, Skanda’s music thrives at the
-                cutting edge of 2024’s musical possibilities.
+                cutting edge of 2024’s musical possibilities. Skanda is always
+                open to composing bespoke musical scores tailored to the
+                client’s production needs, with fast turnarounds. Please feel
+                free to reach out via the contact page below for any inquiries.
               </p>
               <p class="working-with-us-paragraph 3">
                 Skanda is always open to composing bespoke musical scores
