@@ -33,7 +33,7 @@ const AboutPage = () => {
             <div class="touring-paragraph-2">
               Pivoting in the pandemic in 2020, Skanda launched a new type beat
               YouTube channel (1.57k subscribers) and online beat licensing
-              store (IC6_Beats) specializing in high-energy Uk drill music and
+              store (IC6_Beats) specializing in high-energy UK Drill music and
               has accumulated hundreds of thousands of views.
             </div>
             <div class="touring-paragraph-4">
