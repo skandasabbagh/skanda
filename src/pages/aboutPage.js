@@ -91,7 +91,7 @@ const AboutPage = () => {
             <div className="background-paragraph-2">
               It's not always about the money—Skanda is also a liaison for Arts
               Council England, specialising in the development and capacity
-              building of Black and Brown-led music organisations and artists.
+              building of Global Majority-led music organisations and artists.
               His work also addresses the at-risk grassroots ecology of UK
               music, supporting music venues, festivals, and recording studios
               facing potential closure.
