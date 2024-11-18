@@ -52,6 +52,7 @@ const IndexPage = () => {
             autoPlay
             loop
             muted
+            preload="auto"
             playsInline
           ></video>
           <Navbar />
@@ -117,6 +118,7 @@ const IndexPage = () => {
                 src={blueprintVideo}
                 muted={isMuted.blueprintVideo}
                 controls
+                preload="auto"
                 playsInline
               ></video>
             </div>
@@ -128,6 +130,7 @@ const IndexPage = () => {
                 src={drill}
                 muted={isMuted.drill}
                 controls
+                preload="auto"
                 playsInline
               ></video>
             </div>
@@ -139,6 +142,7 @@ const IndexPage = () => {
                 src={wishYouWereHere}
                 muted={isMuted.wishYouWereHere}
                 controls
+                preload="auto"
                 playsInline
               ></video>
             </div>
@@ -150,6 +154,7 @@ const IndexPage = () => {
                 src={heroVideo}
                 muted={isMuted.heroVideo}
                 controls
+                preload="auto"
                 playsInline
               ></video>
             </div>

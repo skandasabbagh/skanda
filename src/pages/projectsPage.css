@@ -242,7 +242,10 @@
     }
   
     .projects-get-in-touch-title {
-      font-size: 40px;
+        font-size: 40px; /* Smaller font size */
+        text-align: center; /* Center content */
+        opacity: 100%;
+  
     }
   
     .email-address{

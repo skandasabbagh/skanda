@@ -171,7 +171,7 @@
 
     .paragraph-column, .image-column {
         max-width: 100%; /* Full width on small screens */
-        padding-left: 30px; /* Remove left padding */
+        /* padding-left: 30px; Remove left padding */
     }
 
     .backgroundCollage {

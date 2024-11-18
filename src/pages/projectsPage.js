@@ -56,6 +56,7 @@ const ProjectsPage = () => {
                 controls
                 muted={videoMuteStatus.wishYouWereHere} // Allow user to toggle sound via button
                 playsInline
+                preload="auto"
                 className="video-slide-in-center"
               ></video>
               <p>
@@ -75,6 +76,7 @@ const ProjectsPage = () => {
                 controls
                 muted={videoMuteStatus.blueprint}
                 playsInline
+                preload="auto"
                 className="video-slide-in-center"
               ></video>
               <p>
@@ -94,6 +96,7 @@ const ProjectsPage = () => {
                 controls
                 muted={videoMuteStatus.cf}
                 playsInline
+                preload="auto"
                 className="video-slide-in-center"
               ></video>
               <p>
@@ -113,6 +116,7 @@ const ProjectsPage = () => {
                 controls
                 muted={videoMuteStatus.tekaz}
                 playsInline
+                preload="auto"
                 className="video-slide-in-center"
               ></video>
               <p>
